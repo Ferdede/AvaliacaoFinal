@@ -23,7 +23,7 @@ public class VendaServiceImpl implements VendaService {
     private ProdutoFeingClient produtoMsClient;
 
     @Override
-    public VendaDto realizarVenda(VendaDto venda){
+    public VendaDto lancarVenda(VendaDto venda){
         return salvarVenda(venda);
     }
 

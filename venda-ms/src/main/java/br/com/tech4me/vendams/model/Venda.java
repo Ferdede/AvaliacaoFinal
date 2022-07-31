@@ -1,5 +1,7 @@
 package br.com.tech4me.vendams.model;
 
+import java.time.LocalDate;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -9,7 +11,7 @@ public class Venda {
     private String id;
     private String codigo;
     private Integer quantidade;
-    private String dataVenda;
+    private LocalDate dataVenda;
     private Float valorVenda;
     private String produtoVenda;
     public String getId() {
@@ -30,10 +32,10 @@ public class Venda {
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
     }
-    public String getDataVenda() {
+    public LocalDate getDataVenda() {
         return dataVenda;
     }
-    public void setDataVenda(String dataVenda) {
+    public void setDataVenda(LocalDate dataVenda) {
         this.dataVenda = dataVenda;
     }
     public Float getValorVenda() {

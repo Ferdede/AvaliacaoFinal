@@ -1,12 +1,13 @@
 package br.com.tech4me.vendams.compartilhado;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class VendaDto {
     private String id;
     private String codigo;
     private Integer quantidade;
-    private String dataVenda;
+    private LocalDate dataVenda;
     private Float valorVenda;
     private String produtoVenda;
     private List<Produto> produtos;
@@ -36,10 +37,10 @@ public class VendaDto {
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
     }
-    public String getDataVenda() {
+    public LocalDate getDataVenda() {
         return dataVenda;
     }
-    public void setDataVenda(String dataVenda) {
+    public void setDataVenda(LocalDate dataVenda) {
         this.dataVenda = dataVenda;
     }
     public Float getValorVenda() {

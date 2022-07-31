@@ -1,12 +1,17 @@
 package br.com.tech4me.vendams.view.model;
 
+import java.util.List;
+
+import br.com.tech4me.vendams.compartilhado.Produto;
+
 public class VendaModeloRequest {
     
     private String codigo;
     private Integer quantidade;
     private String dataVenda;
     private Float valorVenda;
-    private String produto;
+    private String produtoVenda;
+    private List<Produto> produto;
     
     public String getCodigo() {
         return codigo;
@@ -32,10 +37,18 @@ public class VendaModeloRequest {
     public void setValorVenda(Float valorVenda) {
         this.valorVenda = valorVenda;
     }
-    public String getProduto() {
+    public String getProdutoVenda() {
+        return produtoVenda;
+    }
+    public void setProdutoVenda(String produtoVenda) {
+        this.produtoVenda = produtoVenda;
+    }
+    public List<Produto> getProduto() {
         return produto;
     }
-    public void setProduto(String produto) {
+    public void setProduto(List<Produto> produto) {
         this.produto = produto;
     }
+
+    
 }
